@@ -1,0 +1,261 @@
+body{
+  background-image: darkblue
+  
+}
+
+
+.jumbotron{
+    background-color: whitesmoke;
+    color: blue; 
+    font-family: 'Merriweather', serif;
+    font-family: 'Lora', serif;
+    }
+        
+.nav-tabs
+{
+    margin-bottom: 0; 
+}
+    
+.footer
+{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 50px;
+    line-height:45px;
+    background-color: lightgray;
+    color: navy;
+    font-family: 'Merriweather', serif;
+    font-family: 'Lora', serif;
+}
+
+@media screen and (max-width: 796px){
+#main-navbar {
+clear: both;
+}
+/* }
+#animatediv {
+width: 178px;
+height: 55px;
+background: lightblue;
+color: #ffffff;
+position: relative;
+font-weight: bold;
+font-size: 20px;
+padding: 10px;
+animation: animated_div 5s 1;
+-moz-animation: animated_div 5s 1;
+-webkit-animation: animated_div 5s 1;
+-o-animation: animated_div 5s 1;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+@keyframes animated_div
+{
+0% {transform: rotate(0deg);left:0px;}
+25% {transform: rotate(20deg);left:0px;}
+50% {transform: rotate(0deg);left:500px;}
+55% {transform: rotate(0deg);left:500px;}
+70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {transform: rotate(-360deg);left:0px;}
+} */
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    overflow: hidden;
+  }
+  
+  #masterWrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  #panelWrap {
+    width: 100%;
+    height: 100%;
+  }
+  
+  section {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    position: relative;
+    background-color: #fff;
+    margin: 12px;
+    cursor: pointer;
+  }
+  
+  .dots {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    right: 16px;
+  }
+  
+  h1 {
+    position: absolute;
+    z-index: 100;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+  }
+  
+  span {
+    display: block;
+    font-size: 0.75em;
+    font-weight: 400;
+  }
+  
+  #downArrow {
+    bottom: 12px;
+  }
+  
+  #upArrow {
+    top: 12px;
+  }
+  
+  .arrow {
+    position: absolute;
+    z-index: 100;
+    right: 12px;
+    cursor: pointer;
+    opacity: 0.75;
+    width: 40px;
+    height: 40px;
+    stroke-width: 8px;
+    stroke: white;
+    fill: transparent;
+  }
+  
+  .toolTips {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    z-index: 1000;
+  }
+  @media (hover:none) {
+    .toolTips, p.navDotInfo  {
+    visibility: hidden;
+  }
+  }
+  .toolTip {
+    opacity: 0;
+    text-align: right;
+    height: 12px;
+    margin: 12px 0;
+    line-height: 12px;
+    left: 10px;
+    top: 10px;
+  }
+  
+  h3,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  p {
+    max-width: 400px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  p.navDotInfo {
+    position: absolute;
+    bottom: 5px;
+    z-index: 225;
+    width: 100%;
+    text-align: center;
+    max-width: 5000px;
+    font-size: 0.875em;
+  }
+  
+  /* .twitterFollow {
+    padding: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 500px;
+    text-decoration: none;
+    border: solid 2px white;
+    color: white;
+  } */
+  
+  .twitterFollow:hover {
+    background: white;
+    color: #000;
+  }
+  
+  .hideMe {
+    opacity: 0;
+
+  }
+  .iconWrap {
+    width: 300px;
+    margin-top: 30√px;
+  }
+  
+  @media (min-width: 700px) {
+    .iconWrap {
+      width: 600px;
+    }
+  }
+  .icon {
+    text-align: center;
+    width: 150px;
+    float: left;
+  }
+  
+  .icon svg {
+    width: 50px;
+    height: 50px;
+    margin: 6px 0;
+    overflow: visible;
+  }
+  
+  @media (max-width: 480px) {
+    section img {
+      max-width: 200px;
+    }
+    p {
+      max-width: 180px;
+    }
+  }
+
+  .footer
+  {
+      position: absolute;
+      bottom:0;
+      left:0;
+      width: 100%;
+      height: 50px;
+      line-height:45px;
+      background-color: transparent;
+      color: navy;
+  }
